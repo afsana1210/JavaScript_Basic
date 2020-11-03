@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script language=javascript>
+            function ChkName(name){
+                nameptrn=/[A-Z a-z]+$/;
+                if(name.match(nameptrn) && name.length>=3)
+                return true;
+                else
+                {
+                    alert("invalid name")
+                    return false;
+                }
+            }
+            function ChkPass(pass){
+                nameptrn=/[A-Z a-z 0-9@]+$/;
+                if(name.match(nameptrn) && name.length>=3 && pass.length<=10)
+                return true;
+                else
+                {
+                
+                    alert("invalid password")
+                    return false;
+               }
+            function ChkValid(name,pass){
+                if(ChkName(name) && ChkPass(pass))
+                document.write(name+"\t "+pass)
+            }
+            }
+        </script>    
+        <form>
+            Enter name:<input type="text" name="tf1"><br>
+            Enter password:<input type="password" name="pass"><br>
+            <input type="button" value="submit" onclick="ChkValid(form.tf1.value,form.pass.value)">
+        </form>
+    </body>
+</html>
