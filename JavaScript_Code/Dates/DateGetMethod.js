@@ -33,3 +33,13 @@ console.log(Days[d.getDay()]);
 
 console.log(d.getUTCDate());
 
+//The setFullYear() method sets the year of a date object
+d.setFullYear(2010);
+console.log(d);
+
+//The setFullYear() method can optionally set month and day:
+d.setFullYear(2010,11,3);
+console.log(d);
+
+//The setMonth() method sets the month of a date object (0-11):
+console.log(d.setMonth(10));
