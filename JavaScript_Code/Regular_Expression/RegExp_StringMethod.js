@@ -41,9 +41,24 @@ console.log(r);//true
 var s='\nIs th\nis it?';
 var p=/^is/m;
 var res=s.match(p);
-console.log(res);
+console.log(res);//[ 'is', index: 7, input: '\nIs th\nis it?' ]
 
 //Do a global, multiline search for "is" at the beginning of each line in a string:
 var p=/^is/gm;
 var t=s.match(p);
-console.log(t);
+console.log(t);//[ 'is' ]
+
+//Do a global, case-insensitive, multiline search for "is" at the beginning of each line in a string:
+var p=/^is/gmi;
+var r=s.match(p);
+console.log(r);//[ 'Is', 'is' ]
+
+//Do a global, multiline search for "is" at the end of each line in a string:
+var st="Is\nthis\nhis\n?";
+var pat1=/is$/gm;
+var r=st.match(pat1);
+console.log(r);
+
+var p=/match/gi;
+var r=p.multiline;
+console.log(r);
