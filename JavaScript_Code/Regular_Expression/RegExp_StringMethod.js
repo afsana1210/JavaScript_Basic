@@ -20,3 +20,30 @@ console.log(str);
 var rep_regexp=str.replace(/LEARNING/i,'practising');
 console.log('using reg exp,replace string is :'+rep_regexp);
 
+var str1="Perform a global match ,find all matches rather than stopping after the first match";
+var s_all=str1.match(/match/g); //o/p->[ 'match', 'match', 'match' ]
+console.log(s_all);
+
+//Do a global, case-insensitive search for 
+var global_insensitive_search=str1.match(/MATCH/gi);
+console.log(global_insensitive_search);
+
+//he global property returns true if the "g" modifier is set, otherwise it returns false.
+var patt=/match/g;
+var result=patt.global;
+console.log(result);//true
+
+var patt1=/MATCH/i;
+var r=patt1.ignoreCase;
+console.log(r);//true
+
+//m is used to search pattern in multi line
+var s='\nIs th\nis it?';
+var p=/^is/m;
+var res=s.match(p);
+console.log(res);
+
+//Do a global, multiline search for "is" at the beginning of each line in a string:
+var p=/^is/gm;
+var t=s.match(p);
+console.log(t);
