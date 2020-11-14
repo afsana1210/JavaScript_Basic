@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function Display(some){
+                document.getElementById("demo").innerHTML=some;
+            }
+            let promise=new  Promise(function(Resolve,Reject){
+                let x=0;
+                if(x==0){
+                    Resolve("OK");
+                   }else{
+                       Reject("ERROR");
+                   }
+            });
+            promise.then(
+                function(value){Display(value);},
+                function(error){Display(error);}
+            );
+        </script>
+    </body>
+</html>
