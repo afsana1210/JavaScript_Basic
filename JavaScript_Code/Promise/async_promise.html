@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function Display(some){
+             document.getElementById("demo").innerHTML=some;
+            }
+            async function myfunction(){
+                return 'Hello';
+            }
+            myfunction().then(
+                function(value){Display(value);},
+                function(error){Display(error);}
+            );
+        </script>
+    </body>
+</html>
