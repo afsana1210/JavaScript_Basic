@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            
+            async function getFile(){
+                let promise=new Promise(function(Resolve,Reject){
+                    let req=new XMLHttpRequest;
+                    req.open('GET',"./car.html");
+                    req.onload=function(){
+                        if(req.status==200){
+                            Resolve(req.response);
+                        }else{
+                            Resolve('File not found');
+                        }
+                        
+                    };
+                    req.send();
+                });
+                document.getElementById("demo").innerHTML=await promise;
+            }
+            getFile(); 
+        </script>
+    </body>
+</html>
