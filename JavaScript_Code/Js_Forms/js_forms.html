@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function formValidation(){
+                var x=document.forms['myform']['fname'].value;
+                if(x==""){
+                    alert('name must not empty');
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name='myform' method='POST' onsubmit="return formValidation()">
+            Name:<input type='Text' name='fname'>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
