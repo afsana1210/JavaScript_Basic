@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+
+            var person={
+            fullname:function(city,country){
+                return this.firstname+" "+this.lastname+","+city+","+country;
+            }
+            }
+            var person1={
+                firstname:"john",
+                lastname:"smith"
+            }
+            var x=person.fullname.apply(person1,["Pune","India"]);
+            document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>
