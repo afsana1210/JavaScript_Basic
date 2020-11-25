@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Javascript class method :pass parameter into age() method</h1>
+        <p id="demo"></p>
+        <script>
+           class car{
+               constructor(name,year){
+                   this.name=name;
+                   this.year=year;
+               }
+               age(x){
+                   return x-this.year;
+               }
+           }
+           let date=new Date();
+           let year=date.getFullYear();
+
+           let car_obj=new car("Audi",2017);
+           document.getElementById("demo").innerHTML="my car is "+car_obj.age(year) +"year old";
+        </script>
+    </body>
+</html>
