@@ -1,0 +1,18 @@
+<script>
+    var a=new Array(10,20,30,"abc",60.99) ;
+    a[5]=200;//to add element  with index number
+    a[6]="xyz";
+
+    a.push("abc");
+    a.pop();//remove last element
+    a.shift();//remove first element o/p:10 will remove
+    a.unshift(90);//add element at first index position 
+    delete a[0];//delete first element and return undefined at that position.
+
+    var l=a.length; //return array length
+    
+    
+
+    for(i=0;i<l;i++)
+    document.write("<br>"+a[i]);
+</script>
