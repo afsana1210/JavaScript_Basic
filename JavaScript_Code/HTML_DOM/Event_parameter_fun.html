@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <button id="btn">click me</button>
+        <p id="demo"></p>
+        <script>
+            var p1=5;
+            var p2=10;
+        document.getElementById("btn").addEventListener("click",
+        function(){
+            Display(p1,p2);
+        });
+        function Display(a,b){
+            var res=a*b;
+            document.getElementById("demo").innerHTML=res;
+        }
+        </script>
+    </body>
+</html>
