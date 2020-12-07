@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p>hello world</p>
+        <p>javascript</p>
+        <p>nodelist object ,color changed</p>
+        
+        <button onclick="changeColor()">click it</button>
+        <script>
+         function changeColor(){
+            var nodelist= document.querySelectorAll("p");
+            var i;
+            for(i=0;i<nodelist.length;i++){
+            nodelist[i].style.color="red";
+         }
+        }
+        </script>
+    </body>
+</html>
