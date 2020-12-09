@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function Person(id,fname,lname,age){
+                this.id=id;
+                this.fname=fname;
+                this.lname=lname;
+                this.age=age;
+            }
+            var obj=new Person(1,"Mark","Hendson",40);
+            
+            document.getElementById("demo").innerHTML="person age is:"+obj.age;
+        </script>
+    </body>
+</html>
