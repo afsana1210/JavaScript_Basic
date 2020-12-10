@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function Person(id,fname,lname,age){
+                this.id=id;
+                this.fname=fname;
+                this.lname=lname;
+                this.age=age;
+                this.changeName=function(name){
+                    return this.lname=name
+                }
+            }
+            var obj=new Person(1,'Jenny','Handson',23);
+            obj.changeName("Smith")
+            document.getElementById("demo").innerHTML="person last name is "+obj.lname;
+        </script>
+    </body>
+</html>
