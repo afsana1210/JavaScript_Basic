@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+         function Person(fname,lname,age){
+            this.fname=fname;
+            this.lname=lname;
+            this.age=age;
+         }
+         Person.prototype.name=function(){
+             return this.fname+" "+this.lname;
+         }
+         var obj=new Person("John","Smith",20);
+         document.getElementById("demo").innerHTML="person full name is "+obj.name();
+        </script>
+    </body>
+</html>
