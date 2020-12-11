@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var person={
+                name:"abc",
+                age:20,
+                nationality:"Indian"
+            };
+            Object.defineProperty(person,"nationality",{value:"American"})
+            document.getElementById("demo").innerHTML=person.nationality;
+        </script>
+    </body>
+</html>
