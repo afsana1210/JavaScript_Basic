@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button onclick="prompt_box()">click me</button>
+        <p id="demo"></p>
+        <script>
+            function prompt_box(){
+                var txt;
+                var person=prompt("Enter your name", " John smith");
+                if(person==null || person==""){
+                    txt="User cancel the prompt";
+                }
+                else{
+                    txt="Hello "+ person + "! How are you today?";
+                }
+                document.getElementById("demo").innerHTML=txt;
+            }
+        </script>
+    </body>
+</html>
