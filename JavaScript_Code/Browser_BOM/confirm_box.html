@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button onclick="confirm_alertBox()">click me</button>
+        <p id="demo"></p>
+        <script>
+            function confirm_alertBox(){
+                var txt;
+            if(confirm("press a button")){
+               txt = "you press ok";
+            }
+            else{
+                txt = "you press cancel";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        }
+       
+        </script>
+    </body>
+</html>
