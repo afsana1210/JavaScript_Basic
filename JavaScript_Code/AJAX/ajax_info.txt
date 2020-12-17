@@ -1,0 +1,6 @@
+AJAX stands for Asynchronous javascript ans XML
+
+AJAX is a technique for accessing web server from web page 
+
+
+
