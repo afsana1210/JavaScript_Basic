@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <button onclick="createItem()">click to create session</button>
+        <button onclick="displayItem()">click to get storage name</button>
+        <p id="demo"></p>
+        <script>
+          function createItem(){
+              localStorage.setItem("time",Date.now());
+              localStorage.setItem("name","john");
+              localStorage.setItem("age",20);
+                      }
+        
+          function displayItem(){
+               var l,i;
+               document.getElementById("demo").innerHTML="";
+               for(i=0;i<localStorage.length;i++){
+               x=localStorage.key(i);
+               document.getElementById("demo").innerHTML += x + "<br>";
+          }
+        }
+        </script>
+    </body>
+</html>

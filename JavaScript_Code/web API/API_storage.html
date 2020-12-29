@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>The Storage key() Method</h1>
+
+        <p>This example demonstrates how to use the key() method to get the name of a local storage item.</p>
+        <button onclick="storageName()">click to get storage name</button>
+        <p id="demo"></p>
+        <script>
+          function storageName(){
+              var x=localStorage.key(0);
+              document.getElementById("demo").innerHTML=x;
+          }
+        </script>
+    </body>
+</html>
