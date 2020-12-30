@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <button onclick="createItem()">create session Storage item</button>
+        <button onclick="deleteItem()">Delete item</button>
+        <button onclick="displayItem()">Display item value</button>
+        <p id="demo"><p>
+        <script>
+            function createItem(){
+                sessionStorage.mytime=Date.now();
+                sessionStorage.setItem("test","abc");
+                sessionStorage.setItem("test1","hello");
+            }
+            function deleteItem(){
+                sessionStorage.removeItem("mytime");
+                sessionStorage.removeItem("test1");
+            }
+            function displayItem(){
+                var i;
+                document.getElementById("demo").innerHTML=""
+                for(i=0;i<sessionStorage.length;i++){
+                    x=sessionStorage.key(i);
+                    document.getElementById("demo").innerHTML+=x+"<br>";
+                    
+                }
+            
+            }
+        </script>
+    </body>
+</html>
