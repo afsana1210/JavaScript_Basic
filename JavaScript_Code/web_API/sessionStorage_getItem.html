@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <button onclick="createItem()">Create session storage item</button>
+        <button onclick="myFunction()">Get the item value</button>
+        <p id="demo"></p>
+        <script>
+            function createItem(){
+                sessionStorage.test="hello";
+            }
+            function myFunction(){
+                var x=sessionStorage.getItem("test");
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+    </body>
+</html>
