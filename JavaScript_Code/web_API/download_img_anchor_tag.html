@@ -1,0 +1,14 @@
+<html>
+    <body>
+            <a id="myanchor" href="/home/sam/Downloads/w3logo.jpeg" download="w3logoimg">
+            <img border="0" src="/home/sam/Downloads/w3logo.jpeg" alt="W3Schools" width="150" height="200"></a>
+            <button onclick="myfunction()">Try it</button>
+            <p id="demo"></p>
+        <script>
+            function myfunction(){
+                var x=document.getElementById("myanchor").download;
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+    </body>
+</html>
