@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="id01">Hello world</p>
+        <p id="id02">jQuery</p>
+        <p id="id03">javascript</p>
+        <script>
+            $(document).ready(function() {
+                var myElements = $("#id01");
+                $("#demo").text("The text from the id01 paragraph is: " + myElements[0].innerHTML);
+              });
+        </script>
+    </body>
+</html>
